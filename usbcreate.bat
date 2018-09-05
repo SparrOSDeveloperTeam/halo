@@ -1,5 +1,6 @@
 @echo off
 title Halo Portable Edition Maker - File creation for USB
+echo.
 echo ==================
 echo   Halo PEM Setup
 echo ==================
@@ -12,6 +13,7 @@ echo Insert your disc and copy the files to the folder 'files'. When you are fin
 pause >nul
 :retry
 cls
+echo.
 echo ==================
 echo   Halo PEM Setup
 echo ==================
@@ -24,3 +26,21 @@ if "%choice%"=="y" goto yes
 if "%choice%"=="N" goto no
 if "%choice%"=="n" goto no
 if not "%choice%"== goto retry
+:yes
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+echo Please specify the location of the Halo CE folder (e.g. C:\halo)
+echo.
+set /p HPEMSource=Location: 
+cls
+expand %HPEMSource%\FILESCAB\CAB1.CAB -F:* files\
+expand %HPEMSource%\FILESCAB\CAB2.CAB -F:* files\
+expand %HPEMSource%\FILESCAB\CAB3.CAB -F:* files\
+expand %HPEMSource%\FILESCAB\CAB4.CAB -F:* files\
+expand %HPEMSource%\FILESCAB\CAB5.CAB -F:* files\
+expand %HPEMSource%\FILESCAB\CAB6.CAB -F:* files\
+copy %HPEMSource%\FILES\HALO.EXE files\
