@@ -8,7 +8,7 @@ Works on Windows 2000 Pro and later.
 
 ## Dependencies
 
-.Net 3.5 (This can be installed after you install Halo Portable Edition creator.
+[.Net 3.5 Framework](https://www.microsoft.com/en-us/download/details.aspx?id=25150).
 
 ## How to use
 
