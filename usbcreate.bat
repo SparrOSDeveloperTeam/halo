@@ -12,6 +12,7 @@ echo For more information, read the readme for more information.
 echo.
 echo Insert your disc and copy the files to the folder 'cdfiles'. When you are finished, press any key to continue. Alternatively you can choose to copy the files to a folder in C: or any folder (without spaces or special chars, not supported)
 pause >nul
+if exist halopem.iso goto isooptions
 :retry
 cls
 echo.
@@ -60,6 +61,7 @@ copy %HaloFiles%\FILES\HALO.EXE files\
 goto halocab
 :halocab
 cls
+echo.
 echo ==================
 echo   Halo PEM Setup
 echo ==================
@@ -96,6 +98,7 @@ rmdir /q temp
 goto writeusb
 :witeusb
 cls
+echo.
 echo ==================
 echo   Halo PEM Setup
 echo ==================
@@ -111,6 +114,86 @@ if "%flash%"=="1" goto createufd
 if "%flash%"=="2" goto createiso
 if "%flash%"=="3" goto doemall
 :createufd
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+echo What is the destination drive? Use This PC or Computer to check.
+echo.
+echo (E.g. F:)
+echo.
+set /p destflashdrive=Drive 
+xcopy files %DestFlashDrive%\
+goto end
 :createiso
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+mkisofs -o halopem.iso files
+goto end
 :doemall
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+echo What is the destination drive? Use This PC or Computer to check.
+echo.
+echo (E.g. F:)
+echo.
+set /p destflashdrive=Drive 
+xcopy files %DestFlashDrive%\
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+mkisofs -o halopem.iso files
+goto end
+:end
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+echo Setup has completed.
+echo.
+pause
+exit
+:isooptions
+cls
+echo.
+echo ==================
+echo   Halo PEM Setup
+echo ==================
+echo.
+echo We have detected you have created an ISO. You can do one of the following:
+echo.
+echo 1. Write ISO to Flash Drive
+echo 2. Remove ISO and redo setup
+echo 3. Exit
+echo.
+set /p choice=Your choice: (1,2,3) 
+if "%choice%"=="1" goto writeiso
+if "%choice%"=="2" goto cleanup
+if "%choice%"=="3" goto exit
+if not "%chocie%"== goto isooptions
+:writeiso
+start writeiso.exe
+goto exit
+:cleanup
+rmdir /q files
+del halopem.iso
+mkdir files
+copy autorun.inf files\
+goto exit
 :exit
+exit
