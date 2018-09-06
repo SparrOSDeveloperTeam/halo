@@ -199,7 +199,7 @@ if not "%chocie%"== goto isooptions
 start writeiso.exe
 goto exit
 :cleanup
-del halopem.iso
+start bcleanup.exe
 goto exit
 :exit
 exit
