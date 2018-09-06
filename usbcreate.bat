@@ -125,7 +125,10 @@ echo.
 echo (E.g. F:)
 echo.
 set /p destflashdrive=Drive 
-xcopy files %DestFlashDrive%\
+xcopy files %DestFlashDrive%\ /E /K
+rmdir /q files
+mkdir files
+copy autorun.inf files\
 goto end
 :createiso
 cls
@@ -135,6 +138,9 @@ echo   Halo PEM Setup
 echo ==================
 echo.
 mkisofs -o halopem.iso files
+rmdir /q files
+mkdir files
+copy autorun.inf files\
 goto end
 :doemall
 cls
@@ -148,7 +154,7 @@ echo.
 echo (E.g. F:)
 echo.
 set /p destflashdrive=Drive 
-xcopy files %DestFlashDrive%\
+xcopy files %DestFlashDrive%\ /E /K
 cls
 echo.
 echo ==================
@@ -156,6 +162,9 @@ echo   Halo PEM Setup
 echo ==================
 echo.
 mkisofs -o halopem.iso files
+rmdir /q files
+mkdir files
+copy autorun.inf files\
 goto end
 :end
 cls
@@ -190,10 +199,7 @@ if not "%chocie%"== goto isooptions
 start writeiso.exe
 goto exit
 :cleanup
-rmdir /q files
 del halopem.iso
-mkdir files
-copy autorun.inf files\
 goto exit
 :exit
 exit
