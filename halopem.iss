@@ -9,7 +9,7 @@ AppVerName=Halo PE Maker v1.0.0
 AppVersion=1.0.0
 AppPublisher=SparrOSDeveloperTeam
 AppPublisherURL=https://sparrosdeveloperteam.github.io/SparrOS
-AppCopyright=Copyright Â© 2015-2018 SparrOSDeveloperTeam
+AppCopyright=Copyright © 2015-2018 SparrOSDeveloperTeam
 DefaultDirName={pf}\SparrOSDeveloperTeam\Halo PE Maker
 DefaultGroupName=Halo Portable Edition Maker
 UninstallDisplayIcon=uninstall.ico
@@ -61,13 +61,37 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "builder.exe"; DestDir: "{app}"; Components: "program"
-Source: "halope.exe"; DestDir: "{app}"; Components: "program"
+Source: "7-zip32.dll"; DestDir: "{app}"; Components: "program"
+Source: "7za.dll"; DestDir: "{app}"; Components: "program"
+Source: "7za.exe"; DestDir: "{app}"; Components: "program"
+Source: "7zlicense.txt"; DestDir: "{app}"; Components: "program"
+Source: "7zxa.dll"; DestDir: "{app}"; Components: "program"
+Source: "autorun.inf"; DestDir: "{app}\files"; Components: "program"
+Source: "autorun.inf"; DestDir: "{app}"; Components: "program"
+Source: "bcleanup.bat"; DestDir: "{app}\source"; Components: "source"
+Source: "bcleanup.exe"; DestDir: "{app}"; Components: "program"
+Source: "cygwin1.dll"; DestDir: "{app}"; Components: "program"
+Source: "expand.exe"; DestDir: "{app}"; Components: "program"
+Source: "halo.cab"; DestDir: "{app}"; Components: "program"
+Source: "halo.cab.ddf"; DestDir: "{app}"; Components: "program"
+Source: "halo.ico"; DestDir: "{app}"; Components: "program"
+Source: "halo.rtf"; DestDir: "{app}"; Components: "program"
+Source: "haloded.exe"; DestDir: "{app}"; Components: "program"
+Source: "halopem.iss"; DestDir: "{app}\source"; Components: "source"
+Source: "mkisofs.exe"; DestDir: "{app}"; Components: "program"
+Source: "readme.txt"; DestDir: "{app}"; Components: "program"
+;Source: "setup.inf"; DestDir: "{app}"; Components: // This does not go anywhere, not used!
+;Source: "setup.rpt"; DestDir: "{app}"; Components: // This does not go anywhere, not used!
+Source: "uninstall.ico"; DestDir: "{app}"; Components: "program"
+Source: "usbcreate.bat"; DestDir: "{app}\source"; Components: "source"
+Source: "usbcreate.exe"; DestDir: "{app}"; Components: "program"
+Source: "writeiso.bat"; DestDir: "{app}\source"; Components: "source"
+Source: "writeiso.exe"; DestDir: "{app}"; Components: "program"
 
 [Icons]
-Name: "{group}\Halo Portable Edition Maker"; Filename: "{app}\halope.exe"
+;Name: "{group}\Halo Portable Edition Maker"; Filename: "{app}\halope.exe"
 Name: "{group}\Halo PEM Help"; Filename: "{app}\readme.txt"
 
 [Run]
 Filename: "{app}\readme.txt"; Description: "View the README file"; Flags: postinstall shellexec nowait skipifsilent
-Filename: "{app}\halope.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
+;Filename: "{app}\halope.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
