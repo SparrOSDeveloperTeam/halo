@@ -6,9 +6,25 @@ Create a portable version of Halo that can fit on a flash drive.
 
 Works on Windows 2000 Pro and later.
 
+## Tools used
+
+* CDMenuPro V6 for the USB menu
+* ShellExec for Rundll
+* Resource Hacker to grab the menu/sounds for autorun menu
+* CabMaker GUI for making the cab files
+* Quicktime for the file conversions
+* RAD Game Tools' Bink for the new cutscenes
+* Kdenlive for creating the video
+* GNUPaint for creating the card
+* Inno Setup Compiler for creating the setup
+* Expand.exe, Makecab.exe, and Mkisofs.exe for Creating/Extracting cabs and making a ISO
+* 7-Zip and un7zip.exe for 7z tools
+* Halo Dedicated Server (useless these days but whatever people want)
+
 ## Dependencies
 
-[.Net 3.5 Framework](https://www.microsoft.com/en-us/download/details.aspx?id=25150).
+* Halo Combat Evolved original CD-ROM
+* [.Net 3.5 Framework](https://www.microsoft.com/en-us/download/details.aspx?id=25150).
 
 ## How to use
 
@@ -16,4 +32,5 @@ After you install Halo Portable Edition creator, click on the maker shortcut and
 
 ## Downloads
 
-[x86_32/64](#)
+* [Halo PEM Setup x86_32/64](#)
+* [GameSpy Arcade Setup](#) (This has to go on every PC that wants to use Halo for multiplayer)
