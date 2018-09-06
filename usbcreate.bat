@@ -40,7 +40,6 @@ echo.
 set /p HPEMSource=Location: 
 cls
 expand %HPEMSource%\FILESCAB\CAB1.CAB -F:* files\
-if not exist files\MAPS\*.map goto yes
 expand %HPEMSource%\FILESCAB\CAB2.CAB -F:* files\
 expand %HPEMSource%\FILESCAB\CAB3.CAB -F:* files\
 expand %HPEMSource%\FILESCAB\CAB4.CAB -F:* files\
@@ -52,7 +51,6 @@ goto halocab
 :no
 cls
 expand %HaloFiles%\FILESCAB\CAB1.CAB -F:* files\
-if not exist files\MAPS\*.map goto retry
 expand %HaloFiles%\FILESCAB\CAB2.CAB -F:* files\
 expand %HaloFiles%\FILESCAB\CAB3.CAB -F:* files\
 expand %HaloFiles%\FILESCAB\CAB4.CAB -F:* files\
