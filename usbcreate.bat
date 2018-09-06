@@ -47,6 +47,7 @@ expand %HPEMSource%\FILESCAB\CAB4.CAB -F:* files\
 expand %HPEMSource%\FILESCAB\CAB5.CAB -F:* files\
 expand %HPEMSource%\FILESCAB\CAB6.CAB -F:* files\
 copy %HPEMSource%\FILES\HALO.EXE files\
+copy halo.ico files\
 goto halocab
 :no
 cls
@@ -58,6 +59,7 @@ expand %HaloFiles%\FILESCAB\CAB4.CAB -F:* files\
 expand %HaloFiles%\FILESCAB\CAB5.CAB -F:* files\
 expand %HaloFiles%\FILESCAB\CAB6.CAB -F:* files\
 copy %HaloFiles%\FILES\HALO.EXE files\
+copy halo.ico files\
 goto halocab
 :halocab
 cls
