@@ -12,6 +12,7 @@ AppPublisherURL=https://sparrosdeveloperteam.github.io/SparrOS
 AppCopyright=Copyright © 2015-2018 SparrOSDeveloperTeam
 DefaultDirName={pf}\SparrOSDeveloperTeam\Halo PE Maker
 DefaultGroupName=Halo Portable Edition Maker
+SetupIconFile=halo.ico
 UninstallDisplayIcon=uninstall.ico
 LicenseFile=halo.rtf
 OutputBaseFilename=halopem-1_0_0-setup
@@ -99,7 +100,7 @@ Source: "builder\builder\obj\Debug\builder.pdb"; DestDir: "{app}\source\builder\
 Source: "builder\builder\obj\Debug\builder.Resources.resources"; DestDir: "{app}\source\builder\obj\Debug"; Components: "source"
 Source: "builder\builder\obj\Debug\builder.vbproj.GenerateResource.Cache"; DestDir: "{app}\source\builder\obj\Debug"; Components: "source"
 Source: "builder\builder\obj\Debug\builder.xml"; DestDir: "{app}\source\builder\obj\Debug"; Components: "source"
-Source: "builder\builder\obj\Debug\My Project.Reosurces.Designer.vb.dll"; DestDir: "{app}\source\builder\obj\Debug\TempPE"; Components: "source"
+Source: "builder\builder\obj\Debug\TempPE\My Project.Resources.Designer.vb.dll"; DestDir: "{app}\source\builder\obj\Debug\TempPE"; Components: "source"
 Source: "builder\builder\obj\Release\builder.exe"; DestDir: "{app}\source\builder\obj\Release"; Components: "source"
 Source: "builder\builder\obj\Release\builder.Form1.resources"; DestDir: "{app}\source\builder\obj\Release"; Components: "source"
 Source: "builder\builder\obj\Release\builder.pdb"; DestDir: "{app}\source\builder\obj\Release"; Components: "source"
@@ -111,11 +112,11 @@ Source: "builder.pdb"; DestDir: "{app}"; Components: "program"
 Source: "builder.xml"; DestDir: "{app}"; Components: "program"
 Source: "cygwin1.dll"; DestDir: "{app}"; Components: "program"
 Source: "expand.exe"; DestDir: "{app}"; Components: "program"
+Source: "filesgohere.txt"; DestDir: "{app}\cdfiles"; Components: "program"
 Source: "halo.cab"; DestDir: "{app}"; Components: "program"
 Source: "halo.cab.ddf"; DestDir: "{app}"; Components: "program"
 Source: "halo.ico"; DestDir: "{app}"; Components: "program"
 Source: "halo.rtf"; DestDir: "{app}"; Components: "program"
-Source: "haloded.exe"; DestDir: "{app}"; Components: "program"
 Source: "halopem.iss"; DestDir: "{app}\source"; Components: "source"
 Source: "mkisofs.exe"; DestDir: "{app}"; Components: "program"
 Source: "readme.txt"; DestDir: "{app}"; Components: "program"
