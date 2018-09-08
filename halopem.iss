@@ -131,9 +131,9 @@ Source: "writeiso.bat"; DestDir: "{app}\source"; Components: "source"
 Source: "writeiso.exe"; DestDir: "{app}"; Components: "program"
 
 [Icons]
-;Name: "{group}\Halo Portable Edition Maker"; Filename: "{app}\halope.exe"
+Name: "{group}\Halo Portable Edition Maker"; Filename: "{app}\builder.exe"; IconFilename: "{app}\halo.ico"
 Name: "{group}\Halo PEM Help"; Filename: "{app}\readme.txt"
 
 [Run]
 Filename: "{app}\readme.txt"; Description: "View the README file"; Flags: postinstall shellexec nowait skipifsilent
-;Filename: "{app}\halope.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
+Filename: "{app}\halope.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
