@@ -20,10 +20,13 @@ Works on Windows 2000 Pro and later.
 * Expand.exe, Makecab.exe, and Mkisofs.exe for Creating/Extracting cabs and making a ISO
 * 7-Zip and un7zip.exe for 7z tools
 * Halo Dedicated Server (useless these days but whatever people want)
+* VB.Net 2005 for the Builder menu
+* Bat2Exe 2.4.7 for creating exes outta batches
 
 ## Dependencies
 
 * Halo Combat Evolved original CD-ROM
+* USB Flash Drive (1GiB or bigger)
 * [.Net 3.5 Framework](https://www.microsoft.com/en-us/download/details.aspx?id=25150).
 
 ## How to use
@@ -33,4 +36,3 @@ After you install Halo Portable Edition creator, click on the maker shortcut and
 ## Downloads
 
 * [Halo PEM Setup x86_32/64](#)
-* [GameSpy Arcade Setup](#) (This has to go on every PC that wants to use Halo for multiplayer)
