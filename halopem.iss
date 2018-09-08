@@ -136,4 +136,4 @@ Name: "{group}\Halo PEM Help"; Filename: "{app}\readme.txt"
 
 [Run]
 Filename: "{app}\readme.txt"; Description: "View the README file"; Flags: postinstall shellexec nowait skipifsilent
-Filename: "{app}\halope.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
+Filename: "{app}\builder.exe"; Description: "Run Halo Portable Edition Maker"; Flags: postinstall nowait
