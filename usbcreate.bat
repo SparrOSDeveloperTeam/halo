@@ -89,11 +89,11 @@ copy temp\gearbox.bik files\
 copy temp\LinkObj.ini files\
 copy temp\mgs.bik
 mkdir files\RESOURCE
-copy temp\RESOURCE\01_SCREEN_AUTORUN.JPG files\RESOURCE\
-copy temp\RESOURCE\button.bti files\RESOURCE\
+copy temp\01_SCREEN_AUTORUN.JPG files\RESOURCE\
+copy temp\button.bti files\RESOURCE\
 mkdir files\SOUND
-copy temp\SOUND\SFX_AUTORUN.WAV files\
-copy temp\SOUND\SFX_BUTTONCLICK.WAV files\
+copy temp\SFX_AUTORUN.WAV files\
+copy temp\SFX_BUTTONCLICK.WAV files\
 rmdir /q temp
 goto writeusb
 :witeusb
