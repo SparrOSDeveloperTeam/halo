@@ -32,8 +32,8 @@ mkdir files\RESOURCE
 copy temp\01_SCREEN_AUTORUN.JPG files\RESOURCE\
 copy temp\button.bti files\RESOURCE\
 mkdir files\SOUND
-copy temp\SFX_AUTORUN.WAV files\
-copy temp\SFX_BUTTONCLICK.WAV files\
+copy temp\SFX_AUTORUN.WAV files\SOUND\
+copy temp\SFX_BUTTONCLICK.WAV files\SOUND\
 rmdir /q temp
 goto end
 :noinstall
