@@ -81,6 +81,7 @@ del files\bungie.bik
 del files\gearbox.bik
 del files\mgs.bik
 expand halo.cab -F:* temp\
+copy temp\CD_Conf.ini files\
 copy temp\haloded.exe files\
 copy temp\menu.exe files\
 copy temp\Autorun.inf files\
