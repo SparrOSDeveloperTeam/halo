@@ -27,7 +27,7 @@ copy temp\Autorun.inf files\
 copy temp\bungie.bik files\
 copy temp\gearbox.bik files\
 copy temp\LinkObj.ini files\
-copy temp\mgs.bik
+copy temp\mgs.bik files\
 mkdir files\RESOURCE
 copy temp\01_SCREEN_AUTORUN.JPG files\RESOURCE\
 copy temp\button.bti files\RESOURCE\
