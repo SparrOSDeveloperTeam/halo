@@ -1,4 +1,4 @@
-# Halo Portable Edition creator
+# Halo Portable Edition Maker
 
 Create a portable version of Halo that can fit on a flash drive.
 
