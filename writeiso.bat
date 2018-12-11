@@ -1,4 +1,5 @@
 @echo off
+; This will become obsolete!
 title Halo Portable Edition Maker - Write ISO to USB
 if not exist halopem.iso goto noiso
 echo.
