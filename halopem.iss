@@ -15,11 +15,13 @@ DefaultGroupName=Halo Portable Edition Maker
 SetupIconFile=halo.ico
 UninstallDisplayIcon=uninstall.ico
 LicenseFile=halo.rtf
+DiskSpanning=yes
 OutputBaseFilename=halopem-1_0_0-setup
+DisableWelcomePage=no
 ;Compression=lzma
 ;Encryption=Yes
 ;Password=113-HALO-918475
-MinVersion=5.0
+MinVersion=5.1
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
@@ -75,7 +77,6 @@ Source: "builder.exe"; DestDir: "{app}"
 Source: "builder.pdb"; DestDir: "{app}"
 Source: "builder.xml"; DestDir: "{app}"
 Source: "cygwin1.dll"; DestDir: "{app}"
-Source: "expand.exe"; DestDir: "{app}"
 Source: "filesgohere.txt"; DestDir: "{app}\cdfiles"
 Source: "halo.cab"; DestDir: "{app}"
 Source: "halo.cab.ddf"; DestDir: "{app}"
