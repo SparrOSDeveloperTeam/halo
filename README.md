@@ -50,4 +50,4 @@ replacing 'halo' with the directory where your files are being stored.
 ## Downloads
 
 * [Halo PEM Setup x86_32/64](#)
-* [Halo PE Cab Files](#)
+* [Halo PE Cab Files](https://github.com/SparrOSDeveloperTeam/halo/releases/download/v0.1-pre/Halo.cab)
