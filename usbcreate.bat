@@ -39,23 +39,46 @@ echo Please specify the location of the Halo CE folder (e.g. C:\halo)
 echo.
 set /p HPEMSource=Location: 
 cls
-expand %HPEMSource%\FILESCAB\CAB1.CAB -F:* files\
-expand %HPEMSource%\FILESCAB\CAB2.CAB -F:* files\
-expand %HPEMSource%\FILESCAB\CAB3.CAB -F:* files\
-expand %HPEMSource%\FILESCAB\CAB4.CAB -F:* files\
-expand %HPEMSource%\FILESCAB\CAB5.CAB -F:* files\
-expand %HPEMSource%\FILESCAB\CAB6.CAB -F:* files\
+mkdir files\content
+mkdir files\content\gallery
+mkdir files\Controls
+mkdir files\maps
+mkdir files\Shaders
+mkdir files\watson
+7za e %HPEMSource%\FILESCAB\CAB1.CAB -ofiles *
+move files\Cab1\maps\*.* files\maps
+rmdir /s files\Cab1
+7za e %HPEMSource%\FILESCAB\CAB2.CAB -ofiles *
+move files\Cab2\maps\*.* files\maps
+rmdir /s files\Cab2
+7za e %HPEMSource%\FILESCAB\CAB3.CAB -ofiles *
+move files\Cab3\maps\*.* files\maps
+rmdir /s files\Cab3
+7za e %HPEMSource%\FILESCAB\CAB4.CAB -ofiles *
+move files\Cab4\maps\*.* files\maps
+rmdir /s files\Cab4
+7za e %HPEMSource%\FILESCAB\CAB5.CAB -ofiles *
+move files\Cab5\maps\*.* files\maps
+rmdir /s files\Cab5
+7za e %HPEMSource%\FILESCAB\CAB6.CAB -ofiles *
+move files\Cab6\*.* files
+move files\Cab6\Content\*.* files\Content
 copy %HPEMSource%\FILES\HALO.EXE files\
 copy halo.ico files\
 goto halocab
 :no
 cls
-expand %HaloFiles%\FILESCAB\CAB1.CAB -F:* files\
-expand %HaloFiles%\FILESCAB\CAB2.CAB -F:* files\
-expand %HaloFiles%\FILESCAB\CAB3.CAB -F:* files\
-expand %HaloFiles%\FILESCAB\CAB4.CAB -F:* files\
-expand %HaloFiles%\FILESCAB\CAB5.CAB -F:* files\
-expand %HaloFiles%\FILESCAB\CAB6.CAB -F:* files\
+mkdir files\content
+mkdir files\Controls
+mkdir files\maps
+mkdir files\Shaders
+mkdir files\watson
+7za e %HaloFiles%\FILESCAB\CAB1.CAB -ofiles *
+7za e %HaloFiles%\FILESCAB\CAB2.CAB -ofiles *
+7za e %HaloFiles%\FILESCAB\CAB3.CAB -ofiles *
+7za e %HaloFiles%\FILESCAB\CAB4.CAB -ofiles *
+7za e %HaloFiles%\FILESCAB\CAB5.CAB -ofiles *
+7za e %HaloFiles%\FILESCAB\CAB6.CAB -ofiles *
 copy %HaloFiles%\FILES\HALO.EXE files\
 copy halo.ico files\
 goto halocab
