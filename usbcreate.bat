@@ -45,6 +45,19 @@ mkdir files\Controls
 mkdir files\maps
 mkdir files\Shaders
 mkdir files\watson
+mkdir files\watson\1028
+mkdir files\watson\1031
+mkdir files\watson\1033
+mkdir files\watson\1035
+mkdir files\watson\1036
+mkdir files\watson\1040
+mkdir files\watson\1041
+mkdir files\watson\1042
+mkdir files\watson\1046
+mkdir files\watson\2052
+mkdir files\watson\2070
+mkdir files\watson\3076
+mkdir files\watson\3082
 7za e %HPEMSource%\FILESCAB\CAB1.CAB -ofiles *
 move files\Cab1\maps\*.* files\maps
 rmdir /s files\Cab1
@@ -63,6 +76,24 @@ rmdir /s files\Cab5
 7za e %HPEMSource%\FILESCAB\CAB6.CAB -ofiles *
 move files\Cab6\*.* files
 move files\Cab6\Content\*.* files\Content
+move files\Cab6\Content\Gallery\*.* files\content\gallery
+move files\Cab6\Controls\*.* files\Controls
+move files\Cab6\Maps\*.* files\maps
+move files\Cab6\Shaders\*.* files\Shaders
+move files\Cab6\Watson\*.* files\Watson
+move files\Cab6\watson\1028\*.* files\Watson\1028
+move files\Cab6\watson\1031\*.* files\Watson\1031
+move files\Cab6\watson\1033\*.* files\Watson\1033
+move files\Cab6\watson\1035\*.* files\Watson\1035
+move files\Cab6\watson\1036\*.* files\Watson\1036
+move files\Cab6\watson\1040\*.* files\Watson\1040
+move files\Cab6\watson\1041\*.* files\Watson\1041
+move files\Cab6\watson\1042\*.* files\Watson\1042
+move files\Cab6\watson\1046\*.* files\Watson\1046
+move files\Cab6\watson\2052\*.* files\Watson\2052
+move files\Cab6\watson\2070\*.* files\Watson\2070
+move files\Cab6\watson\3076\*.* files\Watson\3076
+move files\Cab6\watson\3082\*.* files\Watson\3082
 copy %HPEMSource%\FILES\HALO.EXE files\
 copy halo.ico files\
 goto halocab
@@ -73,12 +104,56 @@ mkdir files\Controls
 mkdir files\maps
 mkdir files\Shaders
 mkdir files\watson
+mkdir files\watson\1028
+mkdir files\watson\1031
+mkdir files\watson\1033
+mkdir files\watson\1035
+mkdir files\watson\1036
+mkdir files\watson\1040
+mkdir files\watson\1041
+mkdir files\watson\1042
+mkdir files\watson\1046
+mkdir files\watson\2052
+mkdir files\watson\2070
+mkdir files\watson\3076
+mkdir files\watson\3082
 7za e %HaloFiles%\FILESCAB\CAB1.CAB -ofiles *
+move files\Cab1\maps\*.* files\maps
+rmdir /s files\Cab1
 7za e %HaloFiles%\FILESCAB\CAB2.CAB -ofiles *
+move files\Cab2\maps\*.* files\maps
+rmdir /s files\Cab2
 7za e %HaloFiles%\FILESCAB\CAB3.CAB -ofiles *
+move files\Cab3\maps\*.* files\maps
+rmdir /s files\Cab3
 7za e %HaloFiles%\FILESCAB\CAB4.CAB -ofiles *
+move files\Cab4\maps\*.* files\maps
+rmdir /s files\Cab4
 7za e %HaloFiles%\FILESCAB\CAB5.CAB -ofiles *
+move files\Cab5\maps\*.* files\maps
+rmdir /s files\Cab5
 7za e %HaloFiles%\FILESCAB\CAB6.CAB -ofiles *
+move files\Cab6\*.* files
+move files\Cab6\Content\*.* files\Content
+move files\Cab6\Content\Gallery\*.* files\content\gallery
+move files\Cab6\Controls\*.* files\Controls
+move files\Cab6\Maps\*.* files\maps
+move files\Cab6\Shaders\*.* files\Shaders
+move files\Cab6\Watson\*.* files\Watson
+move files\Cab6\watson\1028\*.* files\Watson\1028
+move files\Cab6\watson\1031\*.* files\Watson\1031
+move files\Cab6\watson\1033\*.* files\Watson\1033
+move files\Cab6\watson\1035\*.* files\Watson\1035
+move files\Cab6\watson\1036\*.* files\Watson\1036
+move files\Cab6\watson\1040\*.* files\Watson\1040
+move files\Cab6\watson\1041\*.* files\Watson\1041
+move files\Cab6\watson\1042\*.* files\Watson\1042
+move files\Cab6\watson\1046\*.* files\Watson\1046
+move files\Cab6\watson\2052\*.* files\Watson\2052
+move files\Cab6\watson\2070\*.* files\Watson\2070
+move files\Cab6\watson\3076\*.* files\Watson\3076
+move files\Cab6\watson\3082\*.* files\Watson\3082
+rmdir /s files\Cab6
 copy %HaloFiles%\FILES\HALO.EXE files\
 copy halo.ico files\
 goto halocab
